@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunLeaf</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>SunLeaf</a>
+            <div class="navbar__toggle" id="mobile-menu">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                  <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="/hardware.html" class="navbar__links">Hardware</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="software.html" class="navbar__links">Software</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="stats.html" class="navbar__links">Live Statistics</a>
+                  </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Sign Up</a>
+                </li>
+              </ul>
+        </div>
+        
+    </nav>
+    <div class="main">
+        <div class="main__container">
+          <div class="main__content">
+            <h1>Live Statistics</h1>
+            
+            <div class="stats">
+       
+             <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1293177/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperatura&type=line">
+             </iframe>
+
+             <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1293177/charts/6?bgcolor=%23ffffff&color=%23d62020&days=31&dynamic=true&sum=1440&title=Precipitaci%C3%B3n+%28mm%29&type=spline"></iframe>
+            </div>
+          </div>
+        </div>
+    
+    </div>
